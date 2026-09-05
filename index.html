@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>牛市町｜只漲不跌的美味 — 品牌理念</title>
+<meta name="description" content="牛市町冷藏肉專門。深耕牛肉市場 10 年，從進口、批發到零售。150 天穀飼安格斯黑牛與日本宮崎 A5 和牛，職人精修分切，讓頂級牛肉走進日常餐桌。台南市南區西門路一段296號1樓。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0E0B0A;
+  --ink-2:#161110;
+  --ink-3:#1E1716;
+  --paper:#F2EDE4;
+  --paper-2:#E7E0D3;
+  --cream:#EDE6DC;
+  --muted-d:#A79A8E;
+  --muted-l:#6A6058;
+  --fg-l:#171210;
+  --accent:#B7272C;
+  --accent-soft:#E0BDBF;
+  --line-d:rgba(237,230,220,.13);
+  --line-l:rgba(23,18,16,.14);
+  /* surface-flipping tokens: overridden on every light section */
+  --fg:var(--cream);
+  --muted:var(--muted-d);
+  --line:var(--line-d);
+  --font-display:"Noto Serif TC","Songti TC",'Times New Roman',serif;
+  --font-body:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+body{
+  margin:0;background:var(--ink);color:var(--cream);
+  font-family:var(--font-body);font-weight:400;font-size:16.5px;line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+::selection{background:var(--accent);color:#fff}
+
+.wrap{width:min(100% - 44px,var(--maxw));margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- type ---------- */
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:900;margin:0;line-height:1.16;letter-spacing:-.01em}
+.eyebrow{
+  font-family:var(--font-body);font-size:11.5px;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--muted-d);
+  display:flex;align-items:center;gap:12px;margin:0 0 22px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);flex:none}
+.eyebrow{color:var(--muted)}
+.lede{font-size:17.5px;line-height:1.95;color:var(--muted);max-width:36em;margin:22px 0 0}
+p{margin:0 0 1.15em}
+.sec{padding:120px 0}
+.sec--tight{padding:84px 0}
+.paper,.lore,.foot{--fg:var(--fg-l);--muted:var(--muted-l);--line:var(--line-l)}
+.paper{background:var(--paper);color:var(--fg-l)}
+.paper h1,.paper h2,.paper h3{color:var(--fg-l)}
+.rule{height:1px;background:var(--line);border:0;margin:0}
+.kicker{font-family:var(--font-display);font-weight:700;font-size:13px;letter-spacing:.34em;color:var(--accent)}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(14,11,10,.86);
+  backdrop-filter:saturate(150%) blur(14px);border-bottom:1px solid var(--line-d);
+}
+.nav__in{display:flex;align-items:center;gap:28px;height:66px}
+.nav__logo img{height:24px;width:auto}
+.nav__links{display:flex;gap:26px;margin-left:auto;list-style:none;padding:0;margin-block:0}
+.nav__links a{
+  text-decoration:none;font-size:13.5px;letter-spacing:.06em;color:var(--muted-d);
+  padding:6px 2px;display:inline-block;transition:color .15s ease;
+}
+.nav__links a:hover{color:var(--cream)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:44px;padding:0 22px;border-radius:2px;text-decoration:none;
+  font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:.08em;
+  background:var(--accent);color:#fff;border:1px solid var(--accent);
+  transition:transform .14s ease,background .14s ease;
+}
+.btn:hover{background:#9E1F24;transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn--ghost{background:transparent;color:var(--fg);border-color:var(--line)}
+.btn--ghost:hover{background:rgba(237,230,220,.07);border-color:rgba(237,230,220,.32)}
+.paper .btn--ghost:hover,.lore .btn--ghost:hover,.foot .btn--ghost:hover{background:rgba(23,18,16,.05);border-color:rgba(23,18,16,.34)}
+.nav .btn{min-height:38px;padding:0 16px;font-size:13px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-d)}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center;padding:96px 0 104px}
+.hero__vert{
+  writing-mode:vertical-rl;font-family:var(--font-display);font-weight:700;
+  font-size:15px;letter-spacing:.42em;color:var(--muted-d);
+  position:absolute;top:96px;right:0;height:230px;
+}
+.hero h1{font-size:clamp(46px,6.6vw,86px);letter-spacing:-.035em;line-height:1.05}
+.hero h1 .sm{display:block;font-size:.42em;font-weight:500;letter-spacing:.06em;color:var(--muted-d);margin-bottom:20px;line-height:1.6}
+.hero__mark{width:190px;margin-bottom:34px}
+.hero__mark img{width:100%}
+.hero__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero__fig{position:relative}
+.hero__fig img{width:100%;aspect-ratio:3/2;object-fit:cover;filter:contrast(1.06) saturate(.95)}
+.hero__fig figcaption{
+  position:absolute;left:0;bottom:-30px;font-size:11.5px;letter-spacing:.14em;
+  color:var(--muted-d);text-transform:uppercase;
+}
+.pillars{display:flex;flex-wrap:wrap;border-top:1px solid var(--line-d)}
+.pillars div{
+  flex:1 1 0;min-width:160px;padding:26px 4px 30px;
+  border-right:1px solid var(--line-d);
+}
+.pillars div:last-child{border-right:0}
+.pillars b{display:block;font-family:var(--font-display);font-size:19px;font-weight:700;letter-spacing:.14em}
+.pillars span{display:block;font-size:11.5px;letter-spacing:.16em;color:var(--muted-d);margin-top:8px}
+
+/* ---------- name / 命名 ---------- */
+.name__head{max-width:44em}
+.name__head h2{font-size:clamp(32px,4.1vw,50px);letter-spacing:-.02em}
+.name__grid{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:66px;border-top:1px solid var(--line-l)}
+.name__cell{padding:52px 46px 56px;border-right:1px solid var(--line-l)}
+.name__cell:last-child{border-right:0;background:rgba(23,18,16,.028)}
+.name__cell p.name__glyph{font-family:var(--font-display);font-size:clamp(58px,6vw,84px);font-weight:900;line-height:1;color:var(--accent);letter-spacing:.03em;margin:0}
+.name__cell p.name__rom{font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted-l);margin:16px 0 30px}
+.name__cell p{color:var(--muted-l);font-size:16px;line-height:1.95;max-width:30em}
+.name__cell strong{color:var(--fg-l);font-weight:500}
+
+/* ---------- founder ---------- */
+.founder{background:var(--ink-2);border-block:1px solid var(--line-d)}
+.founder__grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:start}
+.founder__fig img{width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(.32) contrast(1.06) brightness(.82)}
+.founder__fig figcaption{font-size:12px;letter-spacing:.08em;color:var(--muted-d);margin-top:14px;line-height:1.8}
+.founder h2{font-size:clamp(30px,3.8vw,46px);letter-spacing:-.02em;margin-bottom:12px}
+.founder__sub{font-size:13px;letter-spacing:.2em;color:var(--muted-d);margin-bottom:34px}
+.timeline{list-style:none;padding:0;margin:38px 0 0;border-top:1px solid var(--line-d)}
+.timeline li{display:grid;grid-template-columns:112px 1fr;gap:24px;padding:22px 0;border-bottom:1px solid var(--line-d)}
+.timeline time{font-family:var(--font-display);font-weight:700;font-size:15px;letter-spacing:.06em;color:var(--cream);padding-top:2px}
+.timeline p{margin:0;color:var(--muted-d);font-size:15.5px;line-height:1.85}
+.timeline strong{color:var(--cream);font-weight:500}
+.quote{
+  margin:56px 0 0;padding:34px 0 0;border-top:2px solid var(--accent);
+  font-family:var(--font-display);font-weight:500;font-size:clamp(19px,2.3vw,26px);
+  line-height:1.75;letter-spacing:-.01em;max-width:26em;
+}
+.quote cite{display:block;font-family:var(--font-body);font-style:normal;font-size:12.5px;letter-spacing:.14em;color:var(--muted-d);margin-top:22px}
+
+/* ---------- 150 days ---------- */
+.days{position:relative;overflow:hidden}
+.days__bg{position:absolute;inset:0;z-index:0}
+.days__bg img{width:100%;height:100%;object-fit:cover;opacity:.4;filter:grayscale(.45) contrast(1.12)}
+.days__bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--ink) 3%,rgba(14,11,10,.66) 38%,rgba(14,11,10,.9) 72%,var(--ink) 97%)}
+.days__in{position:relative;z-index:1}
+.days__num{
+  font-family:var(--font-display);font-weight:900;font-size:clamp(120px,21vw,268px);
+  line-height:.82;letter-spacing:-.05em;color:var(--cream);display:flex;align-items:flex-end;gap:18px;
+}
+.days__num em{font-style:normal;font-size:.19em;font-weight:700;letter-spacing:.2em;color:var(--muted-d);padding-bottom:.42em}
+.days h2{font-size:clamp(26px,3.3vw,40px);margin-top:26px;max-width:20em;letter-spacing:-.02em}
+.compare{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:74px;border-top:1px solid var(--line-d)}
+.compare > div{padding:34px 30px 38px;border-right:1px solid var(--line-d)}
+.compare > div:last-child{border-right:0;background:rgba(183,39,44,.07)}
+.compare h3{font-size:19px;font-weight:700;letter-spacing:.02em;margin-bottom:12px}
+.compare p{color:var(--muted-d);font-size:15px;line-height:1.85;margin:0}
+.compare .tag{font-size:11px;letter-spacing:.2em;color:var(--muted-d);text-transform:uppercase;display:block;margin-bottom:16px}
+.compare > div:last-child .tag{color:var(--accent-soft)}
+.days__note{margin-top:54px;max-width:40em;color:var(--muted-d);font-size:16px;line-height:1.95}
+.days__note b{color:var(--cream);font-weight:500}
+
+/* ---------- 精修 ---------- */
+.trim__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.trim h2{font-size:clamp(30px,3.8vw,48px);letter-spacing:-.025em}
+.trim__fig img{width:100%;aspect-ratio:7/5;object-fit:cover}
+.trim__fig figcaption{font-size:12.5px;letter-spacing:.06em;color:var(--muted-l);margin-top:14px;line-height:1.8}
+.gauge{margin:44px 0 0;border-top:1px solid var(--line-l);padding-top:32px}
+.gauge__bar{height:34px;display:flex;border:1px solid var(--line-l);background:var(--paper-2)}
+.gauge__fat{width:45%;background:repeating-linear-gradient(135deg,#DCD3C2 0 7px,#CFC5B2 7px 14px)}
+.gauge__meat{width:55%;background:var(--accent)}
+.gauge__key{display:flex;gap:28px;flex-wrap:wrap;margin-top:14px;font-size:12.5px;letter-spacing:.06em;color:var(--muted-l)}
+.gauge__key span::before{content:"";display:inline-block;width:9px;height:9px;margin-right:8px;background:#CFC5B2}
+.gauge__key span+span::before{background:var(--accent)}
+.steps{list-style:none;padding:0;margin:44px 0 0;counter-reset:s}
+.steps li{
+  counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:20px;
+  padding:20px 0;border-top:1px solid var(--line-l);
+}
+.steps li::before{
+  content:"0" counter(s);font-family:var(--font-display);font-weight:700;font-size:14px;
+  letter-spacing:.06em;color:var(--accent);padding-top:3px;
+}
+.steps p{margin:0;font-size:15.5px;line-height:1.85;color:var(--muted-l)}
+.steps strong{color:var(--fg-l);font-weight:500}
+
+/* ---------- 商品牆 ---------- */
+.shelf__head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.shelf__head h2{font-size:clamp(30px,3.8vw,46px);letter-spacing:-.025em;max-width:14em}
+.grid-prod{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line-d);margin-top:56px;border:1px solid var(--line-d)}
+.card{background:var(--ink);padding:0;transition:background .16s ease}
+.card:hover{background:var(--ink-3)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover}
+.card__b{padding:18px 18px 24px}
+.card__tier{font-size:10.5px;letter-spacing:.18em;color:var(--muted-d);text-transform:uppercase}
+.card h3{font-size:15px;font-weight:500;font-family:var(--font-body);line-height:1.6;margin:9px 0 12px;letter-spacing:0}
+.card__p{font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:-.01em}
+.card__p small{font-family:var(--font-body);font-size:11px;font-weight:400;color:var(--muted-d);letter-spacing:.1em;margin-left:5px}
+.shelf__foot{margin-top:26px;font-size:12.5px;color:var(--muted-d);letter-spacing:.04em}
+
+/* ---------- 冷知識 ---------- */
+.lore{background:var(--paper-2);color:var(--fg-l)}
+.lore h2{font-size:clamp(28px,3.4vw,42px);letter-spacing:-.02em;max-width:16em}
+.lore__list{list-style:none;padding:0;margin:60px 0 0;display:grid;gap:0}
+.lore__list li{display:grid;grid-template-columns:96px 1fr;gap:34px;padding:38px 0;border-top:1px solid var(--line-l)}
+.lore__list li:last-child{border-bottom:1px solid var(--line-l)}
+.lore__n{font-family:var(--font-display);font-weight:900;font-size:52px;line-height:1;color:var(--accent);opacity:.42;letter-spacing:-.03em}
+.lore__list h3{font-size:21px;margin-bottom:10px;letter-spacing:-.01em}
+.lore__list p{margin:0;color:var(--muted-l);font-size:16px;line-height:1.9;max-width:44em}
+.lore__list strong{color:var(--fg-l);font-weight:500}
+
+/* ---------- 兩種人 ---------- */
+.who{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-d);border:1px solid var(--line-d);margin-top:56px}
+.who > div{background:var(--ink);padding:46px 42px 50px}
+.who h3{font-size:23px;margin-bottom:8px}
+.who .who__t{font-size:11.5px;letter-spacing:.2em;color:var(--muted-d);text-transform:uppercase;margin-bottom:18px}
+.who ul{list-style:none;padding:0;margin:24px 0 32px}
+.who li{position:relative;padding-left:22px;margin-bottom:11px;color:var(--muted-d);font-size:15.5px;line-height:1.8}
+.who li::before{content:"";position:absolute;left:0;top:.72em;width:9px;height:1px;background:var(--accent)}
+
+/* ---------- footer ---------- */
+.foot{background:var(--paper);color:var(--fg-l);padding:104px 0 46px}
+.foot__top{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:start}
+.foot h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.03em;line-height:1.2}
+.foot__cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.info{list-style:none;padding:0;margin:0;border-top:1px solid var(--line-l)}
+.info li{display:grid;grid-template-columns:88px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line-l);font-size:15px}
+.info dt,.info .k{font-size:11.5px;letter-spacing:.16em;color:var(--muted-l);text-transform:uppercase;padding-top:4px}
+.info a{color:var(--fg-l);text-decoration:none;border-bottom:1px solid var(--line-l)}
+.info a:hover{border-color:var(--accent)}
+.foot__bar{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:74px;padding-top:26px;border-top:1px solid var(--line-l);font-size:12px;color:var(--muted-l);letter-spacing:.05em}
+.foot__logo{width:150px;margin-bottom:26px}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .hero__grid,.founder__grid,.trim__grid,.foot__top{grid-template-columns:1fr;gap:44px}
+  .hero__vert{display:none}
+  .name__grid,.compare,.who{grid-template-columns:1fr}
+  .name__cell,.compare > div{border-right:0;border-bottom:1px solid var(--line-l)}
+  .compare > div{border-bottom:1px solid var(--line-d)}
+  .grid-prod{grid-template-columns:repeat(2,1fr)}
+  .nav__links{display:none}
+  .sec{padding:80px 0}
+  .lore__list li{grid-template-columns:1fr;gap:12px}
+  .timeline li{grid-template-columns:1fr;gap:6px}
+}
+@media (max-width:560px){
+  .name__cell{padding:38px 26px 42px}
+  .who > div{padding:34px 26px 38px}
+  .foot{padding:76px 0 40px}
+}
+</style>
+</head>
+<body>
+
+<a class="sr-only" href="#main">跳到主要內容</a>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__logo" href="https://ushi.tw/" aria-label="牛市町首頁">
+      <img src="assets/logo-cream.png" alt="牛市町 Bull Market" width="900" height="263">
+    </a>
+    <nav aria-label="主要導覽">
+      <ul class="nav__links">
+        <li><a href="#name">名字的由來</a></li>
+        <li><a href="#founder">創辦人</a></li>
+        <li><a href="#days">150 天</a></li>
+        <li><a href="#trim">精修工藝</a></li>
+        <li><a href="#shelf">選肉</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="https://ushi.tw/category">線上選購</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1. HERO -->
+<section class="hero" data-od-id="hero">
+  <div class="wrap">
+    <p class="hero__vert" aria-hidden="true">只漲不跌的美味</p>
+    <div class="hero__grid">
+      <div>
+        <div class="hero__mark"><img src="assets/logo-cream.png" alt="牛市町 Bull Market — 只漲不跌的美味" width="900" height="263"></div>
+        <h1><span class="sm">台南・西門路｜冷藏肉專門</span>讓買牛肉<br>變得更簡單</h1>
+        <p class="lede">深耕牛肉市場 10 年，從進口、批發到零售。無論是家庭日常料理、燒肉聚會，還是餐飲業者採購，牛市町都能提供最穩定的供應與品質。</p>
+        <div class="hero__cta">
+          <a class="btn" href="#days">為什麼是這塊肉</a>
+          <a class="btn btn--ghost" href="#founder">創辦人的故事</a>
+        </div>
+      </div>
+      <figure class="hero__fig" style="margin:0">
+        <img src="assets/hero-cut.jpg" alt="分切師傅戴著手套，在砧板上以長刀分切一整條和牛原肉" width="1800" height="1164" fetchpriority="high">
+      </figure>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
+      <div><b>產地直送</b><span>DIRECT FROM ORIGIN</span></div>
+      <div><b>嚴選進口</b><span>SELECTED IMPORT</span></div>
+      <div><b>澳洲穀飼</b><span>GRAIN-FED 150 DAYS</span></div>
+      <div><b>冷藏空運</b><span>CHILLED AIR FREIGHT</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. 名字的由來 -->
+<section class="sec paper" id="name" data-od-id="name">
+  <div class="wrap">
+    <div class="name__head">
+      <p class="eyebrow on-paper">名字的由來</p>
+      <h2>一個名字，說完了整間店的脾氣</h2>
+      <p class="lede">「牛市町」三個字不是取來好聽的。它把一間肉舖對品質的信心、對價格的態度，還有想成為街區日常的那份心意，全寫進去了。</p>
+    </div>
+    <div class="name__grid">
+      <div class="name__cell">
+        <p class="name__glyph">牛市</p>
+        <p class="name__rom">Bull Market</p>
+        <p>代表我們對牛肉品質的信心與市場穩健成長。在股市裡，「牛市」象徵市場欣欣向榮、持續成長，這正好呼應了我們的理念：<strong>只進口優質牛肉，提供穩定的品質與供應，不做削價競爭，而是讓顧客用合理的價格，買到真正值得的好牛肉。</strong></p>
+      </div>
+      <div class="name__cell">
+        <p class="name__glyph">町</p>
+        <p class="name__rom">まち・Machi</p>
+        <p>代表日式職人精神與市場氛圍。「町」在日文中代表街道、社區，象徵著熱鬧、有溫度的交易市場。在過去，牛肉買賣往往是在傳統市場裡進行，買賣雙方透過互動建立信任。<strong>我們希望「牛市町」不只是個品牌，而是一個讓顧客可以信任、長久依賴的牛肉專門店。</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 創辦人 -->
+<section class="sec founder" id="founder" data-od-id="founder">
+  <div class="wrap">
+    <div class="founder__grid">
+      <figure class="founder__fig" style="margin:0">
+        <img src="assets/store-fridge.jpg" alt="牛市町門市內的冷藏櫃，一層層排放著分裝好的肉品" width="1100" height="920" loading="lazy">
+        <figcaption>台南市南區西門路一段 296 號 1 樓<br>2025 年 8 月，這裡裝上了 400 萬元的冷鏈設備。</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">創辦人・柯朝陽</p>
+        <h2>他先花了一整年<br>把自己弄得「生不如死」</h2>
+        <p class="founder__sub">一個把「看懂價值、省去損耗」練到骨子裡的人</p>
+        <p class="lede" style="max-width:38em">在台南這座以牛肉湯聞名的古都賣牛肉，多數人的直覺不是拼價格，就是進口最貴的日本和牛。柯朝陽兩條路都沒選——他選了最麻煩、但對客人最划算的那一條。</p>
+
+        <ol class="timeline">
+          <li><time>20 幾歲</time><p>單槍匹馬前往大陸創業，從台灣、美國、澳洲進口保健食品做批發，<strong>在異鄉深蹲 12 年</strong>，看盡商海起落與跨國物流的繁瑣細節。</p></li>
+          <li><time>2017</time><p>為了專心求子，放棄在大陸累積多年的版圖回到台灣。迎來一對健康的龍鳳胎後，<strong>他退居幕後，當了整整 3 年的全職奶爸。</strong></p></li>
+          <li><time>回台後</time><p>看中一棟老透天，為了省下統包監工費，對建築完全外行的他決定親自監工。那一整年他自嘲「生不如死」，卻也<strong>徹底看懂了每一道工序的成本與損耗</strong>。</p></li>
+          <li><time>2025</time><p>渴望一家能「週休二日、專心陪小孩」的穩定公司，<strong>投資 400 萬元冷鏈設備</strong>，與合夥人李佩玲共同創立「牛市町有限公司」。</p></li>
+          <li><time>今天</time><p>以客製化精修分切與澳洲 150 天穀飼安格斯黑牛，成為台南高端燒肉與火鍋店的固定供應商，同時把同一塊肉送上家庭的餐桌。</p></li>
+        </ol>
+
+        <blockquote class="quote">
+          「不論是資產還是食材，唯有看懂最核心的『價值』、省去不必要的損耗，才能在紅海中活出最閃耀、最自由的姿態。」
+          <cite>— 柯朝陽，牛市町創辦人</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. 150 天 -->
+<section class="sec days" id="days" data-od-id="days">
+  <div class="days__bg" aria-hidden="true">
+    <img src="assets/pasture.jpg" alt="" width="1800" height="1180" loading="lazy">
+  </div>
+  <div class="wrap days__in">
+    <p class="eyebrow">選肉的邏輯</p>
+    <p class="days__num">150<em>天穀物育肥</em></p>
+    <h2>頂級，不一定要等於昂貴。<br>差別在你懂不懂得挑。</h2>
+    <p class="lede" style="max-width:40em">日本和牛市場在台北早已被大廠高度壟斷，南部也有龍頭盤踞。與其擠進那條紅海，牛市町清醒地選了另一條路——一條讓更多人吃得起頂級牛肉的路。</p>
+
+    <div class="compare">
+      <div>
+        <span class="tag">一般澳洲牛</span>
+        <h3>草飼</h3>
+        <p>牛隻多在大草場自然放牧，肉質健康，但帶有一股台灣消費者普遍不喜歡的草腥味。</p>
+      </div>
+      <div>
+        <span class="tag">美國牛</span>
+        <h3>單一穀物</h3>
+        <p>多為穀飼，主要餵食玉米。肉質偏甜，卻因飼料單一，風味缺乏層次。</p>
+      </div>
+      <div>
+        <span class="tag">牛市町的選擇</span>
+        <h3>澳洲安格斯黑牛・穀飼 150 天</h3>
+        <p>屠宰前 150 天從大草場拉回牧場，餵食由玉米、大豆、黃豆調配的專屬飼料。草腥味被徹底覆蓋，油花均勻漂亮，肉香濃郁且耐吃。</p>
+      </div>
+    </div>
+
+    <p class="days__note">這 150 天的精準肥育，換來的是<b>一塊接近和牛表現、價格卻親民許多的牛肉</b>。牛市町同時進口日本宮崎 A5 和牛與澳洲 M9 和牛——想奢華的時候有，想天天吃的時候，也有。<b>把最頂級的留在架上，同時讓平常日子也吃得起，這才是創辦人真正想做的事。</b></p>
+  </div>
+</section>
+
+<!-- 5. 精修工藝 -->
+<section class="sec paper trim" id="trim" data-od-id="trim">
+  <div class="wrap">
+    <div class="trim__grid">
+      <div>
+        <p class="eyebrow on-paper">職人精修</p>
+        <h2>一塊 2 公斤的牛小排，<br>可能有一半你根本不該付錢。</h2>
+        <p class="lede">整塊原肉送達時，表層往往覆蓋著一層厚厚、無法食用的硬油脂，比例有時高達四到五成。不精修直接切給客人，客人一定會罵；餐廳自己找人修，人工成本高，師傅技術落差還會造成極大的報損浪費。</p>
+
+        <div class="gauge">
+          <div class="gauge__bar" role="img" aria-label="一塊兩公斤牛小排原肉中，約四到五成是不可食用的硬油脂與筋膜，其餘才是精華肉質">
+            <div class="gauge__fat"></div>
+            <div class="gauge__meat"></div>
+          </div>
+          <div class="gauge__key">
+            <span>表層硬油脂與大筋膜 40–50%</span>
+            <span>精修後保留的精華肉質與內在油花</span>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li><p>在 <strong>0～2°C 的低溫無塵室</strong>裡，由專業分切師傅作業，全程不讓肉離開冷鏈。</p></li>
+          <li><p><strong>把表層硬油脂、大筋膜徹底挑掉</strong>，只保留最精華的肉質與內在油花。</p></li>
+          <li><p>依照需求精準分切：<strong>燒肉片每盒 100 公克、牛排 180 公克或 250 公克</strong>等規格包裝。</p></li>
+          <li><p>切下來的碎角料與油脂，轉售給熬湯的牛肉麵店與寵物食品商，<strong>做到一頭牛物盡其用的無浪費。</strong></p></li>
+        </ol>
+      </div>
+      <figure class="trim__fig" style="margin:0">
+        <img src="assets/trim-hand.jpg" alt="分切師傅戴著黑色手套，正以刀尖修去牛肉表層的硬油脂" width="1400" height="800" loading="lazy">
+        <figcaption>全台餐飲業正面臨嚴重缺工，專業分切師傅一師難求。<br>不會切肉的師傅，會讓賺錢的店家賠錢。</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 6. 商品牆 -->
+<section class="sec" id="shelf" data-od-id="shelf">
+  <div class="wrap">
+    <div class="shelf__head">
+      <div>
+        <p class="eyebrow">架上的證據</p>
+        <h2>從 229 元開始，<br>到宮崎 A5 為止。</h2>
+      </div>
+      <p class="lede" style="margin:0;max-width:26em">同一間店裡，你可以買到日常火鍋片，也可以買到一份給重要日子的 A5 肋眼。圖片皆為店內實體拍攝。</p>
+    </div>
+
+    <div class="grid-prod">
+      <article class="card">
+        <img src="assets/prod-a5-ribeye.jpg" alt="日本宮崎 A5 和牛肋眼牛排，油花細密均勻，盛裝於黑色肉盤" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">日本宮崎 A5</p>
+          <h3>精修肋眼牛排（200g）</h3>
+          <p class="card__p">NT$ 1,700</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-a5-shortrib-slice.jpg" alt="日本宮崎 A5 和牛肩小排燒肉片，薄切鋪排於黑色肉盤" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">日本宮崎 A5</p>
+          <h3>肩小排燒肉片（100g）</h3>
+          <p class="card__p">NT$ 659</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-a5-shortrib-yakiniku.jpg" alt="日本宮崎 A5 和牛精修牛小排燒肉片，油花綿密" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">日本宮崎 A5</p>
+          <h3>精修牛小排燒肉片</h3>
+          <p class="card__p">NT$ 569</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-m9-brisket.jpg" alt="澳洲 M9 和牛精修胸腹肉火鍋片，捲放於黑色肉盤" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">澳洲 M9 和牛</p>
+          <h3>精修胸腹肉火鍋片</h3>
+          <p class="card__p">NT$ 299</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-fillet.jpg" alt="安格斯穀飼牛精修菲力牛排，厚切置於黑色肉盤" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修菲力牛排</h3>
+          <p class="card__p">NT$ 560</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-ribeye.jpg" alt="安格斯穀飼牛精修肋眼火鍋、烤肉片" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修肋眼火鍋／烤肉片</h3>
+          <p class="card__p">NT$ 530</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-shortrib.jpg" alt="安格斯穀飼牛精修牛小排燒肉片" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修牛小排燒肉片</h3>
+          <p class="card__p">NT$ 459</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-tongue.jpg" alt="安格斯穀飼牛精修牛舌烤肉片，切面帶細密油花" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修牛舌烤肉片</h3>
+          <p class="card__p">NT$ 399</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-skirt.jpg" alt="安格斯穀飼牛精修橫膈膜燒肉片" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修橫膈膜燒肉片</h3>
+          <p class="card__p">NT$ 309</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="assets/prod-angus-blade.jpg" alt="安格斯穀飼牛精修板腱火鍋片，薄切鋪排" width="900" height="900" loading="lazy">
+        <div class="card__b">
+          <p class="card__tier">安格斯・穀飼 150 天</p>
+          <h3>精修板腱火鍋片</h3>
+          <p class="card__p">NT$ 229</p>
+        </div>
+      </article>
+    </div>
+    <p class="shelf__foot">品項與價格以官網為準，每批油花紋路與色澤略有差異，實品為準。全館消費滿 2,500 元免運。</p>
+  </div>
+</section>
+
+<!-- 7. 冷知識 -->
+<section class="sec lore" data-od-id="lore">
+  <div class="wrap">
+    <p class="eyebrow on-paper">頂級燒肉店不會說的事</p>
+    <h2>會挑肉的人，才敢把價格壓下來</h2>
+    <p class="lede">這些不是行銷話術，是進口商每天在處理的事實。知道了，你點菜的方式會不一樣。</p>
+    <ul class="lore__list">
+      <li>
+        <span class="lore__n" aria-hidden="true">壹</span>
+        <div>
+          <h3>你吃到的頂級牛舌與橫膈膜，其實不是日本或美國來的</h3>
+          <p>依據台灣現行的防疫與進口法規，日本與美國是<strong>禁止輸入內臟類</strong>到台灣的，而「牛舌」與「橫膈膜」在法規認定上皆屬於內臟。因此不論多高檔的燒肉店，你吃到的頂級牛舌與橫膈膜，<strong>基本上全部來自澳洲與紐西蘭。</strong></p>
+        </div>
+      </li>
+      <li>
+        <span class="lore__n" aria-hidden="true">貳</span>
+        <div>
+          <h3>菲力為什麼是最嫩的？因為牠一輩子沒動過</h3>
+          <p>菲力是整頭牛最昂貴的部位，也是<strong>唯一一條生長在內臟與骨頭中間、完全運動不到的肌肉</strong>。因為一輩子沒有動過，它不帶多餘油脂，卻擁有如豆腐般鮮嫩的極致口感。</p>
+        </div>
+      </li>
+      <li>
+        <span class="lore__n" aria-hidden="true">參</span>
+        <div>
+          <h3>牛舌的黃金比例，藏在舌根</h3>
+          <p>牛舌分為舌根、舌中與舌尖。最頂級、最肥美，<strong>白裡透紅、佈滿細密油花的是「舌根」</strong>，只佔整條牛舌的少數，輕輕火烤 5 至 10 秒即入口即化。越往舌尖顏色越紅、肉質越硬，到了舌尖通常就不予食用了。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 8. 兩種人 -->
+<section class="sec sec--tight" data-od-id="who">
+  <div class="wrap">
+    <p class="eyebrow">牛市町為誰而開</p>
+    <h2 style="font-size:clamp(28px,3.4vw,42px);letter-spacing:-.02em">同一塊肉，走進兩種餐桌</h2>
+    <div class="who">
+      <div>
+        <p class="who__t">B2B・餐飲採購</p>
+        <h3>燒肉店、火鍋店、私廚</h3>
+        <ul>
+          <li>客製化精修代工，依店內規格分切包裝</li>
+          <li>0～2°C 低溫無塵室作業，全程冷鏈不中斷</li>
+          <li>替你省下請分切師傅的人力與報損成本</li>
+          <li>穩定供應，不做削價競爭</li>
+        </ul>
+        <a class="btn btn--ghost" href="https://ushi.tw/">餐廳採購洽詢</a>
+      </div>
+      <div>
+        <p class="who__t">B2C・家庭餐桌</p>
+        <h3>日常料理與週末燒肉聚會</h3>
+        <ul>
+          <li>與餐廳同一批進口、同一雙手精修的肉</li>
+          <li>已分切成 100g／180g／250g，開盒即用</li>
+          <li>全館消費滿 2,500 元免運，冷藏宅配到府</li>
+          <li>台南門市可直接選購，看得到、問得到</li>
+        </ul>
+        <a class="btn" href="https://ushi.tw/category">線上選購</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 9. FOOTER -->
+<footer class="foot" data-od-id="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <div class="foot__logo"><img src="assets/logo.png" alt="牛市町" width="900" height="263"></div>
+        <h2>穩賺不賠的美味投資，<br>就在牛市町。</h2>
+        <p class="lede">穩健選肉，牛市町是你的牛肉投資顧問。歡迎走進台南西門路的門市，讓創辦人親自為你介紹每一個部位。</p>
+        <div class="foot__cta">
+          <a class="btn" href="https://ushi.tw/category">看看所有肉品</a>
+          <a class="btn btn--ghost" href="https://www.facebook.com/ushiding/">Facebook 專頁</a>
+        </div>
+      </div>
+      <ul class="info">
+        <li><span class="k">門市</span><span>台南市南區西門路一段 296 號 1 樓</span></li>
+        <li><span class="k">電話</span><span><a href="tel:062619168">06-2619168</a></span></li>
+        <li><span class="k">Email</span><span><a href="mailto:ushidingltd@gmail.com">ushidingltd@gmail.com</a></span></li>
+        <li><span class="k">官網</span><span><a href="https://ushi.tw/">ushi.tw</a></span></li>
+        <li><span class="k">統編</span><span>60691904</span></li>
+      </ul>
+    </div>
+    <div class="foot__bar">
+      <span>牛市町冷藏肉專門・Bull Market・只漲不跌的美味</span>
+      <span>本頁內容整理自牛市町官方網站與創辦人專訪資料，價格與品項以官網公告為準。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
